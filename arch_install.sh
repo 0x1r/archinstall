@@ -161,3 +161,10 @@ yay --noconfirm -S google-chrome brave-bin visual-studio-code-bin sublime-text-4
 /bin/echo -e "fix sudo privileges after reboot"
 /bin/echo -e "part3 end here"
 exit
+#the password will not be asked for any user right now to fix it use this
+#append without NOPASSWD
+#currently this is active in arch but we need the 2nd one
+#sudo echo "%wheel ALL=(ALL:ALL) ALL" >> /etc/sudoers
+
+#command to comment no sudo password
+#sudo sed -i 's/^%wheel ALL=(ALL) NOPASSWD: ALL/#%wheel ALL=(ALL) NOPASSWD: ALL/g' /etc/sudoers
