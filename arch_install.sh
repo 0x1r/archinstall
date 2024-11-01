@@ -149,13 +149,13 @@ chown -R $username:$username ./yay-git
 cd yay-git
 makepkg -si
 
-sudo pacman -S --noconfirm xorg sddm plasma kde-applications firefox obs-studio vlc papirus-icon-theme kdenlive materia-kde
+sudo pacman -S --noconfirm xorg sddm plasma kde-applications firefox obs-studio vlc kdenlive 
 
 # sudo flatpak install -y spotify
 
 sudo systemctl enable sddm
 
-yay --noconfirm -S layan-kde-git spotify-adblock google-chrome brave-bin visual-studio-code-bin sublime-text-4 nerd-fonts-fantasque-sans-mono ttf-meslo-nerd-font-powerlevel10k ttf-joypixels tela-icon-theme ksysguard plasma5-applets-netspeed telegram-desktop-bin
+yay --noconfirm -S google-chrome brave-bin visual-studio-code-bin sublime-text-4 nerd-fonts-fantasque-sans-mono ttf-meslo-nerd-font-powerlevel10k ttf-joypixels  telegram-desktop-bin
 
 
 /bin/echo -e "fix sudo privileges after reboot"
