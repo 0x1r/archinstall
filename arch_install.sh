@@ -84,7 +84,7 @@ systemctl enable bluetooth
 #systemctl enable cups.service
 systemctl enable sshd
 systemctl enable avahi-daemon
-#systemctl enable reflector.timer
+systemctl enable reflector.timer
 systemctl enable tlp 
 # systemctl enable libvirtd
 systemctl enable firewalld
