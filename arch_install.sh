@@ -154,7 +154,7 @@ chown -R $username:$username ./yay-git
 cd yay-git
 makepkg -si
 
-sudo pacman -S --noconfirm sddm plasma plasma-wayland-session kde-applications xorg-xwayland firefox obs-studio vlc kdenlive
+sudo pacman -S --noconfirm sddm plasma plasma-wayland-session kde-applications xorg-xwayland firefox obs-studio vlc kdenlive wl-clipboard
 # sudo flatpak install -y spotify
 
 sudo systemctl enable sddm
