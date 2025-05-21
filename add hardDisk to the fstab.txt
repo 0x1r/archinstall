@@ -1,0 +1,23 @@
+how to make a uuid add for a hardsisk or ssd
+
+sudo mkdir -p /mnt/hardDisk
+# to make a dir
+sudo mount -a
+# to mount all mnt
+lsblk -f
+# to see all vomune and their uuid and percent used
+
+
+now id it is formatted for linux filesystem ext4 use this
+
+
+UUID=e7b5e9bf-c341-4a71-a570-84ffddce15ce /mnt/windir ext4 defaults 0 2
+
+
+if it is using the ntfs for the windows use this
+
+UUID=e7b5e9bf-c341-4a71-a570-84ffddce15ce /mnt/windir ntfs defaults 0 0
+
+if you have ntfs-3g driver use this
+
+UUID=e7b5e9bf-c341-4a71-a570-84ffddce15ce /mnt/windir ntfs-3g defaults 0 0
