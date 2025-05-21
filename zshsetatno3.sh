@@ -13,8 +13,8 @@ sed -i -e 's/ZSH_THEME=".*"/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' /home/$U
 
 #ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#757575'
 
-#append without NOPASSWD
+#append without NOPASSWD first
 sudo echo "%wheel ALL=(ALL:ALL) ALL" >> /etc/sudoers
 
-#command to comment no sudo password
+#command to comment no sudo password second
 sudo sed -i 's/^%wheel ALL=(ALL) NOPASSWD: ALL/#%wheel ALL=(ALL) NOPASSWD: ALL/g' /etc/sudoers
