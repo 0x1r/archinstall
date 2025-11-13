@@ -150,6 +150,8 @@ cd yay-git
 makepkg -si
 
 sudo pacman -S --noconfirm sddm plasma  kde-applications xorg-xwayland firefox obs-studio vlc kdenlive wl-clipboard
+#this is gpu related latest add on remove something if causing error
+sudo pacman -S --noconfirm libva-intel-driver libva-utils nvidia-prime vulkan-intel mesa
 # sudo flatpak install -y spotify
 
 sudo systemctl enable sddm
